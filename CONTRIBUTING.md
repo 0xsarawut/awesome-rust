@@ -1,5 +1,14 @@
 # Contributing
 
+$ dart --version
+Dart SDK version: 3.14.0-edge.65988f930122733af85afcdfb3bf8a0453053af6 (main) (Sun Sep 6 21:49:32 2026 -0700) on "linux_x64"
+
+$ dart compile exe --target-os=linux --target-arch=arm main.dart -o main
+Generated: /home/llm/test/main
+
+$ objdump -T main | grep clock_gettime
+00000000 DF UND 00000000 (GLIBC_2.34) __clock_gettime64`
+
 Do you want to contribute? We'd love that.
 
 Our goal is to have mostly projects that are stable and useful to many users.
